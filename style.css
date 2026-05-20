@@ -13,7 +13,7 @@
   --gold: #d8a45c;
   --gray: #bcbcbc;
   --title-font: "Bebas Neue", Impact, sans-serif;
-  --body-font: "Montserrat", Arial, sans-serif;
+  --body-font: "Inter", Arial, sans-serif;
 }
 
 html {
@@ -151,15 +151,17 @@ button {
   font-size: 96px;
   line-height: .86;
   letter-spacing: 1px;
-  font-weight: 400;
+  font-weight: 500;
+
 }
 
 .hero-text {
   width: 450px;
   margin: 15px auto 0;
   color: #f0f0f0;
+  font-family: "Inter", Arial, sans-serif;
   font-size: 15px;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1.5;
 }
 
@@ -644,7 +646,7 @@ input:focus {
   .hero-img-box {
     order: 4;
     height: 430px;
-    margin-top: 12px;
+    margin-top: -50px;
   }
 
   .hero-img-box img {
@@ -658,12 +660,16 @@ input:focus {
   }
 
   .hero h1 {
-    font-size: 60px;
+    font-size: 90px;
+    letter-spacing: -2px;
   }
 
   .hero-text {
-    width: 270px;
-    font-size: 12px;
+    font-family: "Inter", Arial, sans-serif;
+    width: 350px;
+    font-size: 15px;
+    font-weight: 600;
+    /* line-height: 1.5; */
   }
 
   .hero-content .btn {
