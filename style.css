@@ -155,11 +155,11 @@ button {
 }
 
 .hero-text {
-  width: 350px;
+  width: 450px;
   margin: 15px auto 0;
   color: #f0f0f0;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 800;
   line-height: 1.5;
 }
 
@@ -458,7 +458,7 @@ footer p {
   background: #090909;
   border: 1px solid rgba(248, 196, 119, .36);
   box-shadow: 0 25px 90px rgba(0, 0, 0, .75);
-  animation: modalPop .25s ease;
+  animation: modalPop .15s normal;
 }
 
 @keyframes modalPop {
@@ -621,14 +621,35 @@ input:focus {
     padding-top: 34px;
   }
 
+  .hero-container {
+    text-align: center;
+  }
+
+  .hero-content {
+    display: contents;
+  }
+
+  .ins-logo-div {
+    order: 1;
+  }
+
+  .hero h1 {
+    order: 2;
+  }
+
+  .hero-text {
+    order: 3;
+  }
+
   .hero-img-box {
-    height: 320px;
-    margin-top: 16px;
+    order: 4;
+    height: 430px;
+    margin-top: 12px;
   }
 
   .hero-img-box img {
     width: auto;
-    height: 320px;
+    height: 450px;
     max-width: 100%;
   }
 
@@ -643,6 +664,15 @@ input:focus {
   .hero-text {
     width: 270px;
     font-size: 12px;
+  }
+
+  .hero-content .btn {
+    order: 5;
+    margin-top: 8px;
+  }
+
+  .hero-content .small-link {
+    order: 6;
   }
 
   .btn {

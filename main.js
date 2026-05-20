@@ -48,8 +48,8 @@ leadForm.addEventListener("submit", (event) => {
   submitBtn.disabled = true;
   submitBtn.innerText = "Yuborilmoqda...";
 
-  // ⚠️ SHU YERGA GOOGLE APPS SCRIPT'DAN NUSXALAB OLGAN WEB APP URL HAVOLANGIZNI QO'YING:
-  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyM1F906o7hgC8JP4UffncVryOO-O_4X9g7bYivIkejFA-0gz-T28aagsg4uaKSrDVx/exec";
+  const GOOGLE_SCRIPT_URL =
+    "https://script.google.com/macros/s/AKfycbyM1F906o7hgC8JP4UffncVryOO-O_4X9g7bYivIkejFA-0gz-T28aagsg4uaKSrDVx/exec";
 
   fetch(GOOGLE_SCRIPT_URL, {
     method: "POST",
@@ -60,12 +60,13 @@ leadForm.addEventListener("submit", (event) => {
     body: JSON.stringify(leadData),
   })
     .then(() => {
-      // Muvaffaqiyatli yuborilganda modal ichida yozuv chiqarish va formani tozalash
       successText.classList.add("show");
       leadForm.reset();
 
       setTimeout(() => {
         closeModal();
+        // 🚀 Botga yo'naltirish (1.6 soniyadan keyin)
+        window.location.href = "https://t.me/risolatumidovnarobot";
       }, 1600);
     })
     .catch(error => {
